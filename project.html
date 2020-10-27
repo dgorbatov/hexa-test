@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang= "en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            .header_name {
+                padding: 10px;
+                text-align: center;
+                background: #8f8e96;
+                color: white;
+            }
+
+            .navbar{
+                overflow: hidden;
+                background-color: #333;
+                position: sticky;
+                position: -webkit-sticky;
+                top: 0;
+            }
+
+            .navbar a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+            .navbar a.active {
+                background-color: #666;
+                color: white;
+            }
+
+            .navbar a {
+                float: left;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 20px;
+                text-decoration: none;
+            }
+
+            .navbar a.right {
+                float: right;
+            }
+
+            .image1{
+                float: right;
+                padding: 10px;
+            }
+
+            .teamUpdate{
+                float: left;
+                flex-flow: colum nowrap;
+                columns: 1000px 1;
+            }
+
+        </style>
+    </head>
+    
+    <body>
+        <div class = "header_name">
+            <i style = "font-size: 130%;"> The Hexadecmials </i>
+        </div>
+
+        <div class = "navbar">
+            <a href="home"> Home </a>
+            <a href="project"> Current Progress</a>
+            <a href="donate"> Donate </a> 
+            <a href="notebook"> Engineering notebook</a>
+            <a href="email"> Sign Up For Updates</a>
+            <a href="youtube"> Youtube Channel</a>
+            <a href="login" class = "right"> Login</a>
+        </div>
+
+        <!--
+            TEMPLATE
+            <div class = "teamUpdate">
+                <h1>Update INSERT DATE HERE:</h1>
+
+                <div class = "image1">
+                    <img src = "" alt = "Update INSERT DATE HERE" style="width:400px;height:400px;">
+                </div>
+                <p> INSERT UPDATE HERE
+                    <br> <br> <br> <br> <br> <br> 
+                </p>
+            </div>
+
+        -->
+
+        <div class = "teamUpdate">
+            <h1>Update 10/11/2020:</h1>
+
+            <div class = "image1">
+                <img src = "https://user-images.githubusercontent.com/59454383/95693592-06d3f280-0be2-11eb-9452-8672783b9424.jpg" alt = "Update 10/11/20" style="width:400px;height:400px;">
+            </div>
+            <p> Features have been added to the site including, donate, enginnering
+                notebool, email sign up, and a login in page(still in progress and
+                only adming can log in for now). Other fetures are being worked on
+                but the design aspect is the main concern.
+                <br> <br> <br> <br> <br> <br> 
+            </p>
+        </div>
+
+        <div class = "teamUpdate">
+            <h1>Update 10/9/2020:</h1>
+
+            <div class = "image1">
+                <img src = "https://user-images.githubusercontent.com/59454383/95645132-05cf8380-0a71-11eb-905e-0800005bea71.jpg" alt = "Update 10/9/20" style="width:400px;height:400px;">
+            </div>
+            <p> Website is being build.
+                <br> <br> <br> <br> <br> <br> 
+            </p>
+        </div>
+
+    </body>
+</html>

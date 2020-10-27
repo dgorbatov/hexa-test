@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang= "en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            .header_name {
+                padding: 10px;
+                text-align: center;
+                background: #8f8e96;
+                color: white;
+            }
+
+            .navbar{
+                overflow: hidden;
+                background-color: #333;
+                position: sticky;
+                position: -webkit-sticky;
+                top: 0;
+            }
+
+            .navbar a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+            .navbar a.active {
+                background-color: #666;
+                color: white;
+            }
+
+            .navbar a {
+                float: left;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 20px;
+                text-decoration: none;
+            }
+
+            .navbar a.right {
+                float: right;
+            }
+            
+            .image1{
+                float: right;
+                padding: 10px;
+            }
+
+            .info{
+                float: left;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            }
+
+        </style>
+    </head>
+    
+    <body>
+        <div class = "header_name">
+            <i style = "font-size: 130%;"> Admin </i>
+        </div>
+
+        <div class = "navbar">
+            <a href="home"> Return Home </a>
+            <a href="admin"> Admin Home </a>
+            <a href="displayemails"> Display Emails </a>
+            <a href="removeform"> Remove Email</a>
+            <a href="sendemail"> Send Notification</a>
+            <a href="logout" class = "right"> Logout </a>
+        </div>
+
+        <div class = "image1">
+            <img src = "https://user-images.githubusercontent.com/59454383/95550889-871a0e00-09be-11eb-8e77-6b9c2d8dd2f8.jpg" alt = "The Hexediceml Logo">
+        </div>
+
+        <div class = "info">
+            <h1> Welcome: </h1>
+            <p> <br> <br> <br>
+                Welcome to the admin page. <br>This page has a few admin controls. <br>This page is only
+                ment for members/people <br>invited by the Hexadecimels. <br>If you need any help email
+                dzgorbatov@gmail.com. <br>For security purposes <br> display emails will only display
+                emails if <br> you have a password, reach out by email <br>dzgorbatov@gmail.com for help or slack for accesse.
+                <br>Important, do not <br>try to remove emails without<br> authorazation(post in slack for authorazation).
+                <br>If you try to remove without authorazation it will ask <br>the head-admins first. <br>
+            </p>
+        </div>
+
+    </body>
+</html>

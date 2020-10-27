@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang= "en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            .header_name {
+                padding: 10px;
+                text-align: center;
+                background: #8f8e96;
+                color: white;
+            }
+
+            .navbar{
+                overflow: hidden;
+                background-color: #333;
+                position: sticky;
+                position: -webkit-sticky;
+                top: 0;
+            }
+
+            .navbar a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+            .navbar a.active {
+                background-color: #666;
+                color: white;
+            }
+
+            .navbar a {
+                float: left;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 20px;
+                text-decoration: none;
+            }
+
+            .navbar a.right {
+                float: right;
+            }
+            
+            .image1{
+                float: right;
+                padding: 10px;
+            }
+
+            .info{
+                float: left;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            }
+
+        </style>
+    </head>
+    
+    <body>
+        <div class = "header_name">
+            <i style = "font-size: 130%;"> Admin </i>
+        </div>
+
+        <div class = "navbar">
+            <a href="home"> Return Home </a>
+            <a href="admin"> Admin Home </a>
+            <a href="displayemails"> Display Emails </a>
+            <a href="removeform"> Remove Email</a>
+            <a href="sendemail"> Send Notification</a>
+            <a href="logout" class = "right"> Logout </a>
+        </div>
+
+        <h1>PASSWORD AND KEY REQUIRED</h1>
+        <form action="http://localhost:8080/datavalidatesecure" method="POST">
+            Password: <input type="password" name="pass"><br>
+            Key: <input type="password" name="key"><br>
+            Email: <input type="email" name ="email"><br>
+           <button type="submit">Submit Password</button>
+        </form>
+
+    </body>
+</html>
